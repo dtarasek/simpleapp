@@ -2,7 +2,7 @@ FROM centos
 MAINTAINER Sander <mail@sandervanvugt.nl>
 
 # Add repo file
-ADD ./sander.repo /etc/yum.repos.d/
+#ADD ./sander.repo /etc/yum.repos.d/
 
 # Install cool software
 RUN yum --assumeyes update && \
@@ -11,5 +11,5 @@ nmap iproute && \
 bash && \
 yum clean all
 
-ENTRYPOINT ["/usr/bin/nmap"]
-CMD ["-sn", "172.17.0.0/24"] 
+ENTRYPOINT ["/usr/bin/echo"]
+CMD ["Hello World!!!"] 
