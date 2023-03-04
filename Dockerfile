@@ -11,5 +11,5 @@ nmap iproute && \
 bash && \
 yum clean all
 
-ENTRYPOINT ["/usr/bin/nmap"]
-CMD ["-sn", "172.17.0.0/24"] 
+ENTRYPOINT ["/usr/bin/echo"]
+CMD ["Hello World!!!"] 
